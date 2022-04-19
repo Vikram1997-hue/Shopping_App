@@ -3,7 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:shopping_app/constants.dart';
 import './components/search_form.dart';
 import './components/categories.dart';
-
+import './components/entire_new_arrival_section.dart';
+import './components/popular_section.dart';
 
 class HomeScreen extends StatelessWidget {
   //const HomeScreen({Key? key}) : super(key: key);
@@ -33,7 +34,8 @@ class HomeScreen extends StatelessWidget {
           )
         ],
       ),
-      body: Padding(
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
         padding: const EdgeInsets.all(defaultPadding),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -52,9 +54,15 @@ class HomeScreen extends StatelessWidget {
               child: SearchForm(),
             ),
             Categories(),
+            EntireNewArrivalSection(),
+            SizedBox(height: defaultPadding/1.5,),
+            PopularSection(),
           ],
         ),
       ),
     );
   }
 }
+
+
+

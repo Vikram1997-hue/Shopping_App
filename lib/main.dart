@@ -22,6 +22,10 @@ class MyApp extends StatelessWidget {
         textTheme: const TextTheme(
           bodyText2: TextStyle(color: Colors.black54),
         ),
+        // textTheme: Theme.of(context).textTheme.apply(
+        //   bodyColor: Colors.black54,
+        //   fontFamily: "Gordita",
+        // ),
       ),
       home: HomeScreen(),
     );

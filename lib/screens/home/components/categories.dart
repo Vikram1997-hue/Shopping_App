@@ -15,7 +15,7 @@ class Categories extends StatelessWidget {
       child: Row(
         children: List.generate(
           demo_categories.length,
-              (index) => Padding(
+          (index) => Padding(
             padding: const EdgeInsets.only(right: defaultPadding),
             child: CategoryCard(
                 icon: demo_categories[index].icon,
@@ -36,7 +36,7 @@ class CategoryCard extends StatelessWidget {
   }) : super(key: key);
 
   final String icon, title;
-  final VoidCallback press;
+  final Function press;
 
   @override
   Widget build(BuildContext context) {
@@ -44,7 +44,7 @@ class CategoryCard extends StatelessWidget {
       onPressed: press,
       style: OutlinedButton.styleFrom(
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.all(Radius.circular(defaultBorderRadius)),
+          borderRadius: BorderRadius.circular(defaultBorderRadius),
         ),
       ),
       child: Padding(
