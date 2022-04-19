@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/constants.dart';
 import 'package:shopping_app/screens/home/home_screen.dart';
 
 void main() {
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
         fontFamily: "Gordita",
+        scaffoldBackgroundColor: bgColor,
         textTheme: const TextTheme(
           bodyText2: TextStyle(color: Colors.black54),
         ),

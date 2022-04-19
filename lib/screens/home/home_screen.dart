@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:shopping_app/constants.dart';
+import './components/search_form.dart';
+
 
 class HomeScreen extends StatelessWidget {
   //const HomeScreen({Key? key}) : super(key: key);
@@ -16,11 +18,41 @@ class HomeScreen extends StatelessWidget {
           icon: SvgPicture.asset("assets/icons/menu.svg"),
         ),
         title: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             SvgPicture.asset("assets/icons/Location.svg"),
             SizedBox(width: defaultPadding/2),
             Text("E/85 New Delhi",style: Theme.of(context).textTheme.subtitle2,),
+          ],
+        ),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: SvgPicture.asset("assets/icons/Notification.svg"),
+          )
+        ],
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(defaultPadding),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("Explore", style: Theme.of(context)
+                .textTheme
+                .headline4
+                .copyWith(fontWeight: FontWeight.w500, color: Colors.black)
+            ),
+            Text(
+              "best outfits for you",
+              style: TextStyle(fontSize: 18),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+              child: SearchForm(),
+            ),
+            OutlinedButton(
 
+            ),
           ],
         ),
       ),
