@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:shopping_app/constants.dart';
 import './components/search_form.dart';
+import './components/categories.dart';
 
 
 class HomeScreen extends StatelessWidget {
@@ -50,9 +51,7 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.symmetric(vertical: defaultPadding),
               child: SearchForm(),
             ),
-            OutlinedButton(
-
-            ),
+            Categories(),
           ],
         ),
       ),
