@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shopping_app/screens/details/details_screen.dart';
 import 'section_title.dart';
 import 'package:shopping_app/models/Product.dart';
 import 'product_dart.dart';
@@ -29,7 +30,11 @@ class EntireNewArrivalSection extends StatelessWidget {
                   image: demo_product[index].image,
                   title: demo_product[index].title,
                   price: demo_product[index].price,
-                  press: () {},
+                  press: () {
+                    Navigator.push(context, MaterialPageRoute(
+                      builder: (context) => DetailsScreen(product: demo_product[index],)
+                    ));
+                  },
                   color: demo_product[index].color,
                 ),
               ),

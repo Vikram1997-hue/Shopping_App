@@ -48,7 +48,7 @@ class NewArrivalsProduct extends StatelessWidget {
                   ),
                 ),
                 SizedBox(width: defaultPadding/4,),
-                Text("\$$price", style: Theme.of(context).textTheme.subtitle2,),
+                Text("\u{20B9}$price", style: Theme.of(context).textTheme.subtitle2,),
               ],
             ),
           ],
