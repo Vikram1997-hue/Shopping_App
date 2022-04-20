@@ -40,6 +40,7 @@ class DetailsScreen extends StatelessWidget {
             height: size.height*0.4,
             fit: BoxFit.cover,
           ),
+
           SizedBox(height: defaultPadding*0.75,),
           Expanded(
             child: Container(
