@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:untitled/constants.dart';
+import 'package:untitled/constants/constants.dart';
 import 'package:untitled/models/Product.dart';
 import './components/color_dot.dart';
 

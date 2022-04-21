@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/constants.dart';
+import 'package:untitled/constants/constants.dart';
 
 class NewArrivalsProduct extends StatelessWidget {
   const NewArrivalsProduct({

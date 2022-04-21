@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:untitled/constants.dart';
+import 'package:untitled/constants/constants.dart';
 import 'package:untitled/screens/home/home_screen.dart';
 import 'package:untitled/splash_screen.dart';
 
 
-//testing
 
 void main() {
   runApp(MyApp());
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Shopping Apppp',
+      title: 'Shopping App',
 
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -31,7 +30,7 @@ class MyApp extends StatelessWidget {
         //   fontFamily: "Gordita",
         // ),
       ),
-      home: SplashScreen(), //HomeScreen(),
+      home: HomeScreen()//SplashScreen(), //HomeScreen(),
     );
   }
 }

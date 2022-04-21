@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:untitled/constants.dart';
+import 'package:untitled/constants/constants.dart';
+import 'package:untitled/screens/auth/login.dart';
 import './components/search_form.dart';
 import './components/categories.dart';
 import './components/entire_new_arrival_section.dart';
@@ -16,7 +17,11 @@ class HomeScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(
+              builder: (context) => Login()
+            ));
+          },
           icon: SvgPicture.asset("assets/icons/menu.svg"),
         ),
         title: Row(
