@@ -72,6 +72,11 @@ flutter:
         - asset: assets/fonts/Gordita_Medium.otf
         - asset: assets/fonts/Gordita_Bold.otf
         - asset: assets/fonts/Gordita_Light.otf
+    - family: Avenir
+      fonts:
+        - asset: assets/fonts/AvenirLTStd-Black.otf
+        - asset: assets/fonts/AvenirLTStd-Book.otf
+        - asset: assets/fonts/AvenirLTStd-Roman.otf
 
   #         style: italic
   #   - family: Trajan Pro

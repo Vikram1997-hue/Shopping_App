@@ -59,13 +59,13 @@ class Login extends StatelessWidget {
                       width: size.width*0.5,
                       child: ElevatedButton(
                         onPressed: () {},
-                        style: ElevatedButton.styleFrom(
-                          primary: primaryColor,
-                          padding: EdgeInsets.symmetric(vertical: 14),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.all(Radius.circular(27)),
-                          )
-                        ),
+                        // style: ElevatedButton.styleFrom(
+                        //   primary: primaryColor,
+                        //   padding: EdgeInsets.symmetric(vertical: 14),
+                        //   shape: RoundedRectangleBorder(
+                        //     borderRadius: BorderRadius.all(Radius.circular(27)),
+                        //   )
+                        // ),
                         child: Text("Log In"),
                       ),
                     ),
