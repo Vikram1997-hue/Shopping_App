@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/constants/constants.dart';
+import 'package:untitled/core/components/network_image_loader.dart';
 
 class SocialLogins extends StatelessWidget {
   const SocialLogins({Key? key}) : super(key: key);
@@ -45,9 +46,7 @@ class SingleSocialButton extends StatelessWidget {
             )]
         ),
         child: CircleAvatar(
-          child: Image(
-              image: NetworkImage(imageLink),
-          ),
+          child: NetworkImageLoader(src: imageLink,),
           backgroundColor: Colors.white,
         ),
       ),
