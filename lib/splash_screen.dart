@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:untitled/screens/home/home_screen.dart';
+import 'package:untitled/screens/onboarding/onboarding_screen.dart';
 import 'constants/constants.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -14,13 +15,13 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    navigatetohome();
+    navigateToOnboarding();
   }
 
-  void navigatetohome() async {
+  void navigateToOnboarding() async {
     await Future.delayed(Duration(seconds: 1, milliseconds: 500), () {});
     Navigator.pushReplacement(context, MaterialPageRoute(
-      builder: (context) => HomeScreen(),
+      builder: (context) => OnBoardingScreen(),
     ));
   }
 
